@@ -23,7 +23,7 @@ class AddDeck extends React.Component {
             if (decks[entry.text]) {
                 Alert.alert(
                     'Error!',
-                    'Deck já existente'
+                    'This Deck already Exists !'
                 );
             } else {
                 const newDeck = {[entry.text]: {title: entry.text, questions: []}};
@@ -32,7 +32,7 @@ class AddDeck extends React.Component {
                 addNewDeck(newDeck);
 
                 Alert.alert(
-                    'Sucesso!', 'Deck adicionado',
+                    'Sucesso!', 'Deck Added',
                     [
                         {text: 'OK', onPress: () => this.props.navigation.navigate('DeckDetail', {
                             title: entry.text,
