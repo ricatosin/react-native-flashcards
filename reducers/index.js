@@ -8,7 +8,7 @@ function decks(state = {}, action) {
         case ADD_DECK:
             return {...state, ...action.deck};
 
-        case ADD_QUESTION:
+            case ADD_QUESTION:
             const {title, questions, question, answer} = action.card;
             const newQuestions = JSON.parse(JSON.stringify(questions)).concat([ { question, answer } ]);
 
