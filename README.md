@@ -14,4 +14,4 @@ Runs the application.
 
 Tested on Android.
 
-Developed by: Ricardo Tosin
+## Developed by: Ricardo Tosin
