@@ -59,6 +59,8 @@ const AppNavigator = createStackNavigator({
       },
     },
   },
+
+
   AddCard: {
     screen: AddCard,
     navigationOptions: {
@@ -79,6 +81,7 @@ const AppNavigator = createStackNavigator({
       },
     },
   },
+
 
 })
 
