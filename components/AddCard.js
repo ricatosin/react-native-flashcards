@@ -23,7 +23,7 @@ class AddCard extends React.Component {
                 errorMessage: false,
                 question: ''
               });
-              Alert.alert('Sucesso!', 'Seu novo Card foi adicionado',
+              Alert.alert('Awsome !', 'New Card Created !',
               [
                   {
                       text: 'OK', onPress: () =>
@@ -50,14 +50,14 @@ class AddCard extends React.Component {
             <View style={style.container}>
                 <FormLabel>Pergunta</FormLabel>
                 <FormInput 
-                    placeholder="Você gosta de React?"
+                    placeholder="Write your question !?"
                     value={question}
                     style={style.input}
                     onChangeText={question => this.setState({question})}/>
                 <FormValidationMessage>{this.state.errorMessage ? 'This field is required': ''}</FormValidationMessage>
                 <FormLabel>Resposta</FormLabel>
                 <FormInput
-                    placeholder="Amo <3"
+                    placeholder="Answer here"
                     value={answer}
                     style={style.input}
                     onChangeText={answer => this.setState({answer})}/>
