@@ -21,6 +21,8 @@ const Tabs = createBottomTabNavigator({
      <FontAwesome name='plus-square' size={30} color={tintColor} />
     },
   }),
+  
+
   tabBarOptions: {
     activeTintColor: Platform.OS === 'ios' ? purple : white,
     style: {
